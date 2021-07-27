@@ -1,10 +1,15 @@
 :root {
   --primary-color: #ececec;
-  --branding-color:#80ac7b;
-  --heading-font-family: 'Playfair Display', serif;
-  --default-font-family: 'Nunito', sans-serif;
+  --branding-color: #80ac7b;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Nunito", sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
@@ -63,7 +68,32 @@ p {
   padding: 35px 60px;
 }
 
-@media (max-width:960px) {
+.btn-branding-outline {
+  border-radius: 8px;
+  border: 1px solid var(--branding-color);
+  color: var(--branding-color);
+  font-size: 18px;
+  line-height: 28px;
+  padding: 15px 25px;
+}
+
+.about-section {
+  padding: 100px 20px;
+}
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
+@media (max-width: 960px) {
   h1 {
     font-size: 60px;
   }
@@ -79,13 +109,9 @@ p {
     padding: 0;
     text-align: center;
   }
-}
 
-.btn-branding-outline {
-  border-radius: 8px;
-  border: 1px solid var(--branding-color);
-  color: var(--branding-color);
-  font-size: 18px;
-  line-height: 28px;
-  padding: 15px 25px; 
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
 }
