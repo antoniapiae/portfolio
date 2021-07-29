@@ -8,9 +8,7 @@
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
   color: black;
   font-family: var(--heading-font-family);
   font-weight: bold;
@@ -39,9 +37,9 @@ nav ul {
 nav li {
   display: inline;
   list-style: none;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 40px;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 nav a {
@@ -52,6 +50,39 @@ nav a {
 nav a:hover,
 nav li.active a {
   color: var(--branding-color);
+}
+
+footer {
+  margin: 50px 0;
+}
+
+footer .contact-box {
+  background: var(--primary-color);
+  border-radius: 8px;
+  padding: 30px 100px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-media-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  font-size: 18px;
+}
+
+footer .social-media-links a:hover {
+  color: white;
+  background: var(--branding-color);
 }
 
 .hero {
@@ -102,7 +133,7 @@ nav li.active a {
 }
 
 .content-container {
-  padding: 100px 20px;
+  padding: 50px 20px;
 }
 
 .content {
